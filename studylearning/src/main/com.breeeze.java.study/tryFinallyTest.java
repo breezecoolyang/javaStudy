@@ -1,4 +1,7 @@
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.TimeZone;
 
 public class tryFinallyTest {
     public static void main(String[] args) {
@@ -13,8 +16,10 @@ public class tryFinallyTest {
 //           value++;
 //           System.out.println("run in finally, i is " + value);
 //       }
-        HashMap<String, String> queueEnvironment = new HashMap<String, String>();
-        queueEnvironment.put("hello", "world");
-        System.out.println(queueEnvironment);
+//        HashMap<String, String> queueEnvironment = new HashMap<String, String>();
+//        queueEnvironment.put("hello", "world");
+//        System.out.println(queueEnvironment);
+
+
     }
 }

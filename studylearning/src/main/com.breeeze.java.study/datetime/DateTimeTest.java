@@ -1,9 +1,12 @@
 package datetime;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.TimeZone;
 
 public class DateTimeTest {
     private static double doubleValue = 0;
@@ -39,5 +42,11 @@ public class DateTimeTest {
     {
         doubleValue = value;
         System.out.println(doubleValue);
+    }
+
+    public static void getAmericanTime() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        sdf.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+        System.out.println(sdf.format(Calendar.getInstance().getTime()));
     }
 }
